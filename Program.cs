@@ -6,23 +6,24 @@
         DebitCardManager dbm = new();
         InputManager im = new();
         DatabaseConnections dbc = new();
-        
-        bool cardValidation = true;
-        while (cardValidation == true)
+        DebitCard dc = new();
+
+        bool cardValidation = false;
+        while (cardValidation == false)
         {
             //Console.Clear();
             Console.WriteLine("***WELCOME TO YOUR FAVOURITE ATM***");
             Console.WriteLine("--------------------------------");
-            Console.WriteLine("Please enter your ID to access your account....");
+            Console.Write("Please enter your ID to access your account: ");
             dbm.ValidateCard();
-            
-        }
 
-        while(cardValidation == false)
+        }
+       
+       
+        bool menu = true;
+        while (menu == true)
         {
-            Console.WriteLine(dbm.ValidateCard);
+            Console.Clear();
         }
-
-
     }
-}
+}    

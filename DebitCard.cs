@@ -6,6 +6,11 @@ public class DebitCard
 
     public DebitCard()
     {
-        
+
+    }
+
+    public override string ToString()
+    {
+        return $"{ID}-{pin}-{exp_date}";
     }
 }

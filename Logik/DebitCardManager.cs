@@ -1,28 +1,41 @@
 using Dapper;
+using MySqlConnector;
 public class DebitCardManager
 {
     DatabaseConnections dbc = new();
     InputManager im = new();
     DebitCard dc = new();
-    DebitCard? Cardinsertetion;
 
     //Validera kort, returna ID och exp_date
-    public DebitCard ValidateCard()
+    public void ValidateCard()
     {
-        dbc.Open();
-        string input = Console.ReadLine();
-        var cardInfo = dbc.connection.Query<DebitCard>($"SELECT ID, pin, exp_date FROM debitcard WHERE ID ='{input}'");
-        foreach (DebitCard info in cardInfo)
-        {
-            Cardinsertetion = info;
-            //Console.WriteLine("ID: " + dc.ID + " " + "Expiration Date: " + dc.exp_date);
-        }
-        return Cardinsertetion;
+            try
+            {        
+                dbc.Open();
+                int input = Convert.ToInt32(Console.ReadLine());
+                //int DebitCard = im.InputError(1, 99, "Invalid ID, Please try again");
+                var cardInfo = dbc.connection.Query<DebitCard>($"SELECT * FROM debitcard WHERE ID ='{input}'").ToList();
+                foreach (DebitCard dc in cardInfo)
+                {
+                    Console.WriteLine("ID: " + dc.ID + " " + "Expiration date: " + dc.exp_date);
+                }
+            }
+
+            catch (Exception e)
+            {
+                Console.WriteLine("Invalid ID, Please try again!");
+            }
     }
 
     //Validera Pin
     public void ValidatePin()
     {
-
+        dbc.Open();
+        int pinInput = Convert.ToInt32(Console.ReadLine());
+        var cardInfo = dbc.connection.Query<DebitCard>($"SELECT pin FROM WHERE pin = '{pinInput}'");
+        foreach (DebitCard dc in cardInfo)
+        {
+            Console.WriteLine("***WELCOME***");
+        }
     }
 }
