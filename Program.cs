@@ -4,26 +4,30 @@
     {
         AccountManager acm = new();
         DebitCardManager dbm = new();
-        InputManager im = new();
         DatabaseConnections dbc = new();
         DebitCard dc = new();
 
+            Console.WriteLine("***WELCOME TO YOUR FAVOURITE ATM***");
+            Console.WriteLine("--------------------------------");
+        
         bool cardValidation = false;
         while (cardValidation == false)
         {
-            //Console.Clear();
-            Console.WriteLine("***WELCOME TO YOUR FAVOURITE ATM***");
-            Console.WriteLine("--------------------------------");
             Console.Write("Please enter your ID to access your account: ");
             dbm.ValidateCard();
+            cardValidation = true;
+            break;
 
         }
        
        
-        bool menu = true;
-        while (menu == true)
+        while (cardValidation == true)
         {
-            Console.Clear();
+            //Console.Clear();
+            System.Console.WriteLine("Card Validated!!");
+            Console.WriteLine("\n\n Please choose an option below");
+
+            break;
         }
     }
 }    

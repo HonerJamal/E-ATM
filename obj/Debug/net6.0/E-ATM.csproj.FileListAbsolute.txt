@@ -16,3 +16,21 @@ C:\Users\Zaxol\OneDrive\Skrivbord\SUVNET22\E-ATM Honer\E-ATM\obj\Debug\net6.0\re
 C:\Users\Zaxol\OneDrive\Skrivbord\SUVNET22\E-ATM Honer\E-ATM\obj\Debug\net6.0\E-ATM.pdb
 C:\Users\Zaxol\OneDrive\Skrivbord\SUVNET22\E-ATM Honer\E-ATM\obj\Debug\net6.0\E-ATM.genruntimeconfig.cache
 C:\Users\Zaxol\OneDrive\Skrivbord\SUVNET22\E-ATM Honer\E-ATM\obj\Debug\net6.0\ref\E-ATM.dll
+C:\Users\Zaxol\OneDrive\Skrivbord\SUVNET22\EATM PROJEKT HONER\E-ATM\bin\Debug\net6.0\E-ATM.exe
+C:\Users\Zaxol\OneDrive\Skrivbord\SUVNET22\EATM PROJEKT HONER\E-ATM\bin\Debug\net6.0\E-ATM.deps.json
+C:\Users\Zaxol\OneDrive\Skrivbord\SUVNET22\EATM PROJEKT HONER\E-ATM\bin\Debug\net6.0\E-ATM.runtimeconfig.json
+C:\Users\Zaxol\OneDrive\Skrivbord\SUVNET22\EATM PROJEKT HONER\E-ATM\bin\Debug\net6.0\E-ATM.dll
+C:\Users\Zaxol\OneDrive\Skrivbord\SUVNET22\EATM PROJEKT HONER\E-ATM\bin\Debug\net6.0\E-ATM.pdb
+C:\Users\Zaxol\OneDrive\Skrivbord\SUVNET22\EATM PROJEKT HONER\E-ATM\bin\Debug\net6.0\Dapper.dll
+C:\Users\Zaxol\OneDrive\Skrivbord\SUVNET22\EATM PROJEKT HONER\E-ATM\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\Zaxol\OneDrive\Skrivbord\SUVNET22\EATM PROJEKT HONER\E-ATM\obj\Debug\net6.0\E-ATM.csproj.AssemblyReference.cache
+C:\Users\Zaxol\OneDrive\Skrivbord\SUVNET22\EATM PROJEKT HONER\E-ATM\obj\Debug\net6.0\E-ATM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Zaxol\OneDrive\Skrivbord\SUVNET22\EATM PROJEKT HONER\E-ATM\obj\Debug\net6.0\E-ATM.AssemblyInfoInputs.cache
+C:\Users\Zaxol\OneDrive\Skrivbord\SUVNET22\EATM PROJEKT HONER\E-ATM\obj\Debug\net6.0\E-ATM.AssemblyInfo.cs
+C:\Users\Zaxol\OneDrive\Skrivbord\SUVNET22\EATM PROJEKT HONER\E-ATM\obj\Debug\net6.0\E-ATM.csproj.CoreCompileInputs.cache
+C:\Users\Zaxol\OneDrive\Skrivbord\SUVNET22\EATM PROJEKT HONER\E-ATM\obj\Debug\net6.0\E-ATM.csproj.CopyComplete
+C:\Users\Zaxol\OneDrive\Skrivbord\SUVNET22\EATM PROJEKT HONER\E-ATM\obj\Debug\net6.0\E-ATM.dll
+C:\Users\Zaxol\OneDrive\Skrivbord\SUVNET22\EATM PROJEKT HONER\E-ATM\obj\Debug\net6.0\refint\E-ATM.dll
+C:\Users\Zaxol\OneDrive\Skrivbord\SUVNET22\EATM PROJEKT HONER\E-ATM\obj\Debug\net6.0\E-ATM.pdb
+C:\Users\Zaxol\OneDrive\Skrivbord\SUVNET22\EATM PROJEKT HONER\E-ATM\obj\Debug\net6.0\E-ATM.genruntimeconfig.cache
+C:\Users\Zaxol\OneDrive\Skrivbord\SUVNET22\EATM PROJEKT HONER\E-ATM\obj\Debug\net6.0\ref\E-ATM.dll

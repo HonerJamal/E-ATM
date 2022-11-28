@@ -3,12 +3,15 @@ using MySqlConnector;
 public class DebitCardManager
 {
     DatabaseConnections dbc = new();
-    InputManager im = new();
     DebitCard dc = new();
+    DebitCard? cardValidation;
+    bool tryAgain = true;
 
     //Validera kort, returna ID och exp_date
-    public void ValidateCard()
+    public DebitCard ValidateCard()
     {
+        while (tryAgain)
+        {
             try
             {        
                 dbc.Open();
@@ -19,16 +22,21 @@ public class DebitCardManager
                 {
                     Console.WriteLine("ID: " + dc.ID + " " + "Expiration date: " + dc.exp_date);
                 }
+                return cardValidation;
             }
 
             catch (Exception e)
             {
                 Console.WriteLine("Invalid ID, Please try again!");
+                tryAgain = true;
             }
+        }
+        return cardValidation;    
     }
 
     //Validera Pin
-    public void ValidatePin()
+    // connecta account_to_debit card med pin så får vi ut aktuella accountet (INNER JOIN)
+    /*public void ValidatePin()
     {
         dbc.Open();
         int pinInput = Convert.ToInt32(Console.ReadLine());
@@ -37,5 +45,5 @@ public class DebitCardManager
         {
             Console.WriteLine("***WELCOME***");
         }
-    }
+    }*/
 }
