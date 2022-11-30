@@ -1,5 +1,4 @@
 using MySqlConnector;
-using Dapper;
 using System.Data;
 public class DatabaseConnections
 {
