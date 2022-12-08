@@ -89,11 +89,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Zaxol\\OneDrive\\Skrivbord\\SUVNET22\\EATM PROJEKT HONER\\E-ATM\\E-ATM.csproj",
+      "projectUniqueName": "C:\\Users\\Zaxol\\OneDrive\\Skrivbord\\SUVNET22\\E-ATM Honer\\E-ATM\\E-ATM.csproj",
       "projectName": "E-ATM",
-      "projectPath": "C:\\Users\\Zaxol\\OneDrive\\Skrivbord\\SUVNET22\\EATM PROJEKT HONER\\E-ATM\\E-ATM.csproj",
+      "projectPath": "C:\\Users\\Zaxol\\OneDrive\\Skrivbord\\SUVNET22\\E-ATM Honer\\E-ATM\\E-ATM.csproj",
       "packagesPath": "C:\\Users\\Zaxol\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Zaxol\\OneDrive\\Skrivbord\\SUVNET22\\EATM PROJEKT HONER\\E-ATM\\obj\\",
+      "outputPath": "C:\\Users\\Zaxol\\OneDrive\\Skrivbord\\SUVNET22\\E-ATM Honer\\E-ATM\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Zaxol\\AppData\\Roaming\\NuGet\\NuGet.Config"

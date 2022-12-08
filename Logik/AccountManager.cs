@@ -13,26 +13,35 @@ public class AccountManager
         }
     }
 
-    public void WithdrawCash()
+    public void WithdrawCash(int cash)
     {
-        int input = Convert.ToInt32(Console.ReadLine());
-        var cashOut = dbc.connection.Query<Account>($"UPDATE account SET balance = balance - {input} WHERE ID = 1");
-    }
-
-    public void GetBalance()
-    {
-        var checkBalance = dbc.connection.Query<Account>($"SELECT balance FROM account WHERE ID = 1");
-        foreach (Account b in checkBalance)
+        int myBalance = GetBalance();
+        if (cash > myBalance)
         {
-            Console.WriteLine("Your current balance is: " + b.balance);
+            Console.WriteLine("Insufficient funds!!");
+            System.Console.WriteLine("Please take your card");
+            Thread.Sleep(3000);
+            Environment.Exit(0);
         }
+        
+        else 
+        {
+            var cashOut = dbc.connection.Query<Account>($"UPDATE account SET balance = balance - {cash} WHERE ID = 1");
+        }
+
     }
 
-    public void DepositCash()
+    public int GetBalance()
     {
-        int input = Convert.ToInt32(Console.ReadLine());
-        var cashIn = dbc.connection.Query<Account>($"UPDATE account SET balance = balance + {input} WHERE ID = 1");
+        int checkBalance = dbc.connection.QuerySingle<int>($"SELECT balance FROM account WHERE ID = 1");
+        return checkBalance;
     }
+
+    public void DepositCash(int deposit)
+    {
+        var cashIn = dbc.connection.Query<Account>($"UPDATE account SET balance = balance + {deposit} WHERE ID = 1");
+    }
+
 
 
 }

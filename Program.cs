@@ -50,7 +50,8 @@
                 Console.Clear();
                 Console.WriteLine("***WITHDRAW***");
                 Console.WriteLine("\nHow much would you like to withdraw?");
-                acm.WithdrawCash();
+                int cash = Convert.ToInt32(Console.ReadLine());
+                acm.WithdrawCash(cash);
                 Console.WriteLine("Please wait...");
                 Thread.Sleep(3000);
                 Console.WriteLine("Please take your card");
@@ -66,7 +67,8 @@
             if (choice == "2")
             {
                 Console.Clear();
-                acm.GetBalance();
+                int checkBalance = acm.GetBalance();
+                Console.WriteLine("Your current balance is: " + checkBalance);
                 System.Console.WriteLine("Press any key to return");
                 Console.ReadLine();
             }
@@ -75,7 +77,8 @@
             {
                 Console.Clear();
                 Console.WriteLine("How much would you like to deposit?");
-                acm.DepositCash();
+                int deposit = Convert.ToInt32(Console.ReadLine());
+                acm.DepositCash(deposit);
                 Console.WriteLine("Please wait while we count your inserted cash...");
                 Thread.Sleep(1000);
                 Console.WriteLine("Please take your card");
