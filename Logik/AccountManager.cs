@@ -2,11 +2,10 @@ using Dapper;
 public class AccountManager
 {
     DatabaseConnections dbc = new();
-    public void ActiveAccount()
+    public void ActiveAccount(int id)
     {
         dbc.Open();
-        int input = Convert.ToInt32(Console.ReadLine());
-        var accInfo = dbc.connection.Query<Account>($"SELECT * FROM account WHERE ID = '{input}'");
+        var accInfo = dbc.connection.Query<Account>($"SELECT * FROM account WHERE ID = '{id}'");
         foreach (Account ac in accInfo)
         {
             Console.WriteLine("You are on this account: " + ac.account_name);

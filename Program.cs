@@ -14,9 +14,12 @@
         while (cardValidation == false)
         {
             Console.Write("Please enter your ID to access your account: ");
-            dbm.ValidateCard();
+            
+            int id = int.Parse(Console.ReadLine());
+            dbm.ValidateCard(id);
             Console.WriteLine("Please enter your PIN: ");
-            dbm.ValidatePin();
+            int pin = int.Parse(Console.ReadLine());
+            dbm.ValidatePin(pin);
             cardValidation = true;
             break;
         }
@@ -36,7 +39,8 @@
             System.Console.WriteLine("***WELCOME***");
             System.Console.WriteLine("--------------");
             Console.WriteLine("Please choose your account: ");
-            acm.ActiveAccount();
+            int id = int.Parse(Console.ReadLine());
+            acm.ActiveAccount(id);
             Console.WriteLine("---------------------------");
             Console.WriteLine("\nPlease choose an option below");
             Console.WriteLine("[1] Withdraw");
@@ -50,7 +54,7 @@
                 Console.Clear();
                 Console.WriteLine("***WITHDRAW***");
                 Console.WriteLine("\nHow much would you like to withdraw?");
-                int cash = Convert.ToInt32(Console.ReadLine());
+                int cash = int.Parse(Console.ReadLine());
                 acm.WithdrawCash(cash);
                 Console.WriteLine("Please wait...");
                 Thread.Sleep(3000);
@@ -69,15 +73,16 @@
                 Console.Clear();
                 int checkBalance = acm.GetBalance();
                 Console.WriteLine("Your current balance is: " + checkBalance);
-                System.Console.WriteLine("Press any key to return");
+                System.Console.WriteLine("Press any key to exit");
                 Console.ReadLine();
+                Environment.Exit(0);
             }
 
             if (choice == "3")
             {
                 Console.Clear();
                 Console.WriteLine("How much would you like to deposit?");
-                int deposit = Convert.ToInt32(Console.ReadLine());
+                int deposit = int.Parse(Console.ReadLine());
                 acm.DepositCash(deposit);
                 Console.WriteLine("Please wait while we count your inserted cash...");
                 Thread.Sleep(1000);
